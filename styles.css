@@ -1,0 +1,168 @@
+/* CSS by Michele Pomarico */
+/* Colors by Coolers.co */
+
+:root {
+    --light-cold: #8ecae6;
+    --dark-cold: #219ebc;
+    --light-warm: #ffb703;
+    --dark-warm: #fb8500;
+    --dark: #023047;
+    --light: #eeeeee;
+ }
+ 
+ * {
+     padding: 0;
+     margin: 0;
+     font-family: 'Segoe UI','Tahoma', 'Genova', 'Verdana','sans-serif' ;
+ }
+ 
+ html, body {
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .limiter {
+     width: 80vmin;
+     max-width: 500px;
+     margin-left: auto;
+     margin-right: auto;
+     /* max-width: 1000px;
+     margin: 0 auto;
+     height: 100%;
+     padding: 0 20px; */
+ }
+ 
+ .header, .main, .footer {
+     padding: 1em 0;
+ }
+ 
+ .controls {
+     width: 80%;
+     margin: 1em auto;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ main {
+     flex-grow: 1;
+ }
+ 
+ header {
+     background-color: var(--dark-cold);
+ }
+ 
+ footer { 
+     background-color: var(--dark-cold);
+ }
+
+ fieldset {
+    border-radius: 5px;
+    border-color: var(--light-cold);
+ }
+
+ .row{
+    float: left;
+    width: 100%;
+ }
+
+ .row > div {
+    width: calc(100% / 7.0);
+    float: left;
+ }
+
+ .square-holder{
+    position: relative;
+ }
+
+ .square-sizer {
+    padding-top: 100%;
+ }
+
+ .square-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+ }
+
+ .cell{
+    background-color: var(--dark-warm);
+ }
+
+ .vaible{
+    background-color: var(--dark-cold);
+ }
+
+
+ .playerSymbol, .target, .directionArrow {
+    background-size: 600% 100%;
+    background-image: url(images/symbols.svg);
+    background-position: 0% 0%;
+ }
+
+ .target{
+    background-position: 20%;
+ }
+
+.Up{
+   background-position: 40%; 
+}
+
+.Left{
+    background-position: 100%;
+}
+
+.Right {
+    background-position: 60%;
+}
+
+.Down {
+    background-position: 80%;
+}
+
+.control-holder{
+    width: 90%;
+    max-width: 10em;
+   
+    
+    
+}
+.control-content {
+    background-color:  var(--light-warm);
+}
+
+.size-bar{
+    clear: both;
+    text-align: right;
+    padding-top: 0.5em;
+}
+
+ .size-bar > button{
+    width: 5em;
+    margin-left: 0.5em;
+ }
+
+ .size-bar > button:hover{
+    background-color: var(--dark-warm);
+    cursor: pointer;
+ }
+
+ .directionArrow{
+    cursor: pointer;
+ }
+
+ .directionArrow:hover{
+    background-color: var(--dark-warm);
+ }
+
+ .directionArrow, .directionSpacer, .direction {
+   
+    width: calc(33% - 2px);
+    height: calc(33% - 2px);
+    float: left;
+    border: 1px solid var(--dark-cold);
+ }
+
+ 
